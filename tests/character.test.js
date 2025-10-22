@@ -1,4 +1,4 @@
-const Character = require('../src/character');
+const Character = require('src/character');
 
 test('Tanjiro promotes from Mizunoto to Mizunoe', () => {
   const tanjiro = new Character("Tanjiro", "Mizunoto");
