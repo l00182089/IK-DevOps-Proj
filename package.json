@@ -1,0 +1,13 @@
+{
+  "name": "demon-slayer-devops",
+  "version": "1.0.0",
+  "description": "Demon Slayer project for DevOps assignment",
+  "main": "src/character.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "jest": "^29.0.0"
+  }
+}
