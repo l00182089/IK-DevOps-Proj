@@ -1,0 +1,11 @@
+{
+  "source": {
+    "include": ["character.js"],
+    "includePattern": ".js$"
+  },
+  "opts": {
+    "destination": "./docs",
+    "recurse": true,
+    "verbose": true
+  }
+}
