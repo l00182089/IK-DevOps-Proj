@@ -4,7 +4,7 @@
   "description": "Demon Slayer project for DevOps assignment",
   "main": "src/character.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
     "docs": "jsdoc -c jsdoc.json"
   },
   "dependencies": {},
