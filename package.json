@@ -5,6 +5,7 @@
   "main": "src/character.js",
   "scripts": {
     "test": "jest"
+    "docs": "jsdoc -c jsdoc.json"
   },
   "dependencies": {},
   "devDependencies": {
