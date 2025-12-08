@@ -14,6 +14,9 @@ class Character {
   constructor(name, rank) {
     this.name = name;
     this.rank = rank;
+
+    // Logging creation event
+    console.log(`[INFO] Character created: Name="${this.name}", Rank="${this.rank}"`);
   }
 
 
@@ -24,8 +27,16 @@ class Character {
   promote() {
     const ranks = ["Mizunoto", "Mizunoe", "Kanoe", "Kanooto", "Hashira"];
     const currentIndex = ranks.indexOf(this.rank);
+
+    console.log(`[DEBUG] Attempting promotion for "${this.name}" at rank "${this.rank}"`);
+    
     if (currentIndex < ranks.length - 1) {
       this.rank = ranks[currentIndex + 1];
+
+      console.log(`[INFO] Promotion successful: "${this.name}" is now rank "${this.rank}"`);
+    } else {
+      console.log(`[WARN] Promotion failed: "${this.name}" is already at the highest rank "${this.rank}"`);
+      
     }
     return this.rank;
   }
