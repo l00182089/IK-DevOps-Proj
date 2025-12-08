@@ -33,6 +33,12 @@ jobs:
     - name: Run unit tests
       run: npm test
 
+    - name: Upload logs
+      uses: actions/upload-artifact@v4
+      with:
+        name: application-logs
+        path: logs/app.log
+
     - name: Generate documentation
       run: npm run docs
 
