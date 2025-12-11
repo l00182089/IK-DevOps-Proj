@@ -1,4 +1,4 @@
-export default [
+module.exports = [
   {
     ignores: ["docs/**"], // ignore auto-generated JSDoc files
   },
@@ -6,7 +6,7 @@ export default [
     files: ["**/*.js"],
     languageOptions: {
       ecmaVersion: 2021,
-      sourceType: "commonjs",
+      sourceType: "script", // commonjs style
       globals: {
         node: true,
         jest: true
