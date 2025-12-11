@@ -1,12 +1,17 @@
-import js from "@eslint/js";
-
 export default [
   {
-    ignores: ["docs/**"], // ignore auto-generated documentation
+    ignores: ["docs/**"], // ignore auto-generated JSDoc files
   },
-  js.configs.recommended, // recommended ESLint rules
-
   {
+    files: ["**/*.js"],
+    languageOptions: {
+      ecmaVersion: 2021,
+      sourceType: "commonjs",
+      globals: {
+        node: true,
+        jest: true
+      }
+    },
     rules: {
       "no-unused-vars": "warn",
       "no-undef": "error",
