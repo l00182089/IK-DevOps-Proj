@@ -38,7 +38,7 @@ class Character {
     } else 
       logger.warn(`Promotion failed: "${this.name}" is already at the highest rank "${this.rank}"`);
       
-    }
+    
     return this.rank;
   }
 }
